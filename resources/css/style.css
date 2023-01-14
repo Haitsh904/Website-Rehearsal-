@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #222121;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (min-width: 700px) {
+  nav {
+    flex-direction: row;
+  }
+}
+
+.main-logo {
+  width: 270px;
+  height: 135px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+@media (max-width: 891px) {
+  .nav-list {
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 700px) {
+  .nav-list {
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+}
+
+.nav-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (min-width: 700px) {
+  .nav-icons {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.nav-list li {
+  display: inline;
+  margin: auto 20px;
+  font-size: 20px;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Signika", sans-serif;
+  font-weight: lighter;
+}
+.nav-list li a:hover {
+  color: #ffa700;
+}
+
+.nav-list li .firstlink {
+  color: #ffa700;
+}
+
+.nav-list li .firstlink:hover {
+  color: white;
+}
+
+.iconImagesize {
+  width: 40px;
+  height: 25px;
+}
+
+#last-logoimg {
+  width: 35px;
+  height: 25.5px;
+}
